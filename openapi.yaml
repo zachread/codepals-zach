@@ -1,0 +1,22 @@
+---
+openapi: 3.0.1
+info:
+  title: IntercomTest
+  description: Testing an OpenAPI Spec for the Intercom API.
+  version: "0.1"
+servers:
+- url: https://api.intercom.io
+paths:
+  /users:
+    get:
+      description: List all users
+      responses:
+        200:
+          description: Successfully listed users
+components:
+  schemas: {}
+  securitySchemes:
+    basic:
+      type: HTTP
+      scheme: basic
+  extensions: {}
